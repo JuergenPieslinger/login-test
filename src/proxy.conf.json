@@ -1,0 +1,8 @@
+{
+  "/api/**": {
+    "target": "http://10.150.43.232:80",
+    "secure": false,
+    "logLevel": "debug",
+    "ws": true
+  }
+}
