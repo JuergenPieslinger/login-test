@@ -9,15 +9,16 @@ import { routes } from './app.routes';
 
 @NgModule({
     declarations: [
-        AppComponent,
-        LoginComponent,
+
     ],
     imports: [
         BrowserModule,
         FormsModule,
         RouterModule.forRoot(routes),
+        AppComponent,
+        LoginComponent,
     ],
     providers: [],
-    bootstrap: [AppComponent],
+    bootstrap: [],
 })
 export class AppModule {}
