@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import {FormsModule} from "@angular/forms";
 
 @Component({
   standalone: true,
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  imports: [],
+  imports: [
+    FormsModule
+  ],
 })
 export class LoginComponent {
   constructor(private router: Router) {}

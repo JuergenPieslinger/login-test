@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   standalone: true,
   selector: 'app-mainpage',
   templateUrl: './mainpage.component.html',
-  styleUrls: ['./mainpage.component.css',
-    imports: [],
+  styleUrls: ['./mainpage.component.css'],
+    imports: [
+  ],
 })
 export class MainpageComponent {}
