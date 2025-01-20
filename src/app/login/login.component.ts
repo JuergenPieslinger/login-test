@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
   standalone: true,
-  imports: [],
+  selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css'],
+  imports: [],
 })
 export class LoginComponent {
+  constructor(private router: Router) {}
 
+  onLogin(): void {
+    // Hier kannst du die Login-Prüfung hinzufügen
+    const isAuthenticated = true; // Beispiel für erfolgreiche Authentifizierung
+
+    if (isAuthenticated) {
+      this.router.navigate(['/mainpage']);
+    } else {
+      alert('Login fehlgeschlagen!');
+    }
+  }
 }
