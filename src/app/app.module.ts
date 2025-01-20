@@ -9,9 +9,9 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { routes } from './app.routes';
 
 @NgModule({
-    declarations: [AppComponent, LoginComponent, MainpageComponent],
-    imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
+    declarations: [],
+    imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes), AppComponent, MainpageComponent],
     providers: [],
-    bootstrap: [AppComponent],
+    bootstrap: [LoginComponent],
 })
 export class AppModule {}
